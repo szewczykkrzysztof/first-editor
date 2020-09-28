@@ -19,13 +19,12 @@ const saveButton = document.querySelector('.save--js');
 
 console.log(saveButton);
 
-const openButton = document.querySelector('.open--js');
+const loadButton = document.querySelector('.load--js');
 
-console.log(openButton);
+console.log(loadButton);
 
 
 saveButton.addEventListener("click", () => {
     localStorage.setItem('content',text.value);
   });
 
-  
