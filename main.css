@@ -23,9 +23,10 @@ main {
     width: 512px;
     height: 240px;
 margin-bottom: 16px;
+border-radius: 4px;
 }
 
-.openButton {
+.loadButton {
     width: 84px;
     height: 40px;
     background: #27AE60;

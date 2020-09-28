@@ -27,3 +27,5 @@ console.log(openButton);
 saveButton.addEventListener("click", () => {
     localStorage.setItem('content',text.value);
   });
+
+  
