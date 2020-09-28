@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
     <title>Prosty edytor</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1 class="editor__Tittle">Prosty edytor</h1>
-        <input class="editor__InputBox editor--js">
-            
+      <h1 class="editor__Tittle">Prosty edytor</h1>
+      <form>
+                <textarea class="editor__InputBox editor--js" name="editorWindow" id="editorWindow">
+        </textarea>
         <div class="buttons">
-            <button class="saveButton save--js">Zapisz</button>
-            <button class="loadButton load--js">Wczytaj</button>
+          <button class="saveButton save--js">Zapisz</button>
+          <button class="loadButton load--js">Wczytaj</button>
         </div>
+      </form>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
