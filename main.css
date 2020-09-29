@@ -1,46 +1,49 @@
+:root {
+  --button-size: ; }
+
 html {
   font-family: "Open Sans", sans-serif;
-}
+  box-sizing: border-box; }
 
 body {
-  background: #121232;
-  box-sizing: border-box;
-}
+  background: #121232; }
 
 main {
-  margin-left: 176px;
-}
+  margin-left: 176px; }
 
 .editor__Tittle {
   font-size: 44px;
   color: #ffffff;
   font-weight: normal;
   margin-top: 104px;
-  margin-bottom: 8px;
-}
+  margin-bottom: 8px; }
 
 .editor__InputBox {
-    width: 512px;
-    height: 240px;
-margin-bottom: 16px;
-border-radius: 4px;
-}
+  width: 512px;
+  height: 240px;
+  margin-bottom: 16px;
+  border-radius: 4px; }
+
+.clearButton {
+  width: 84px;
+  height: 40px;
+  order: 1px solid #232735;
+  border-radius: 4px;
+  margin-right: 36px;
+  background: grey; }
 
 .loadButton {
-    width: 84px;
-    height: 40px;
-    background: #27AE60;
-    border: 1px solid #232735;
-box-sizing: border-box;
-border-radius: 4px;
-margin-left: 36px;
-}
+  width: 84px;
+  height: 40px;
+  order: 1px solid #232735;
+  border-radius: 4px;
+  margin-right: 36px;
+  background: #27ae60; }
 
 .saveButton {
-    width: 84px;
-    height: 40px;
-    background: #EB5757;
-    border: 1px solid #232735;
-box-sizing: border-box;
-border-radius: 4px;
-}
+  width: 84px;
+  height: 40px;
+  order: 1px solid #232735;
+  border-radius: 4px;
+  margin-right: 36px;
+  background: #eb5757; }
