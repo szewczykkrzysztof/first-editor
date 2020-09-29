@@ -4,6 +4,7 @@
   "description": "Edytor z zapisywaniem tekstu do local storage",
   "main": "index.js",
   "scripts": {
+    "convert": "node-sass main.scss main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Krzysztof Szewczyk",
