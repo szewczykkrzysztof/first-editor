@@ -11,11 +11,26 @@ if (savedContent) {
 const editorWindow = document.querySelector(".editor--js"); //przypisuje do stałej editorWindow zawartość klasy editor--js
 const saveButton = document.querySelector(".save--js"); // tworze stałą i podpinam do niej klasę reprezentującą przycisk
 const loadButton = document.querySelector(".load--js"); // tworzę kolejny przycisk z przypisaną klasą
+const clearButton = document.querySelector(".clear--js"); // podpięcię przycisku czyszczenia
 
-editorWindow.value = editorContent; // zwracam  zawartość zmiennej editorContet jako zawartoś okna edytora
-
-saveButton.addEventListener("click", () => {
+saveButton.addEventListener("click", (e) => {
+  e.preventDefault(); //zapobiega przeładowaniu formularza
   localStorage.setItem("content", editorWindow.value);
 });
-
 //podpinam do obiektu /przysisku zapisz/ akcję na klik, która zapisuje zawartość okna edytora do local storage pod kluczem content
+
+loadButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  editorWindow.value = localStorage.getItem("content"); // zwracam  zawartość zmiennej editorContet jako zawartoś okna edytora
+  console.log(editorWindow.value);
+});
+
+clearButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (savedContent) {
+  localStorage.removeItem("content");
+  document.querySelector(".info--js").innerHTML = "Schowek został wyczyszczony";}
+  else {
+    document.querySelector(".info--js").innerHTML = "Schowek jest pusty"
+  }
+});
